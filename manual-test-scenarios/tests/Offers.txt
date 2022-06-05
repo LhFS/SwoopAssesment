@@ -1,0 +1,4 @@
+Given I am in the loan funding page
+And I click to see my instant loan offer
+When I fill all fields 
+Then the offers that matches with my bussiness should be visible to me

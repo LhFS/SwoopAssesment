@@ -1,0 +1,39 @@
+{
+  "name": "swoopassesment",
+  "version": "1.0.0",
+  "description": "This repository consists in a suite of manual and automated tests for Swoop website and demosite with purpose to show my QA skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "cypress run ",
+    "postcypress:run": "node ./cypress/support/multiple-cucumber-html-reporter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LhFS/SwoopAssesment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LhFS/SwoopAssesment/issues"
+  },
+  "homepage": "https://github.com/LhFS/SwoopAssesment#readme",
+  "dependencies": {
+    "cypress": "^9.7.0",
+    "multiple-cucumber-html-reporter": "^1.21.2"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/integration/common",
+    "commonPath": "cypress/integration/common",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

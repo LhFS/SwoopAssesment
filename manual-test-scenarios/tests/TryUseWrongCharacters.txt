@@ -1,0 +1,4 @@
+Given I'm logged in the Swoop Application
+And I'm in the company profile
+When I try to fill with letter a field that require number
+Then the field should not be filled

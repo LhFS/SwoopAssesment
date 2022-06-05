@@ -1,0 +1,4 @@
+Given I am in the loan funding page
+When I click in View Details in one offer
+Then the details the offer should be visible to me 
+And I should be able to start a swoop review
